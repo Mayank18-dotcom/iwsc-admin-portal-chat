@@ -1,0 +1,18 @@
+<nav class="nav-extended">
+  <div class="container">
+    <div class="nav-wrapper">
+      <a (click)="(GoToHome)" href="#" class="brand-logo">Chat App</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li class="dropdown-button dropdown-trigger1" data-target="dropdown1">
+          <i class="fa fa-bell fa-1x badge"></i>
+          <span class="nav-label-icon circle" *ngIf="msgNumber > 0">{{ msgNumber }}</span>
+        </li>
+        <li><a (click)="logout()">Logout</a></li>
+      </ul>
+    </div>
+    <div class="nav-content" style="height: 100px;">
+      <h1 class="profile-name">{{ user.username }}</h1>
+      <!-- <p class="user-text">This is a test</p> -->
+    </div>
+  </div>
+</nav>
